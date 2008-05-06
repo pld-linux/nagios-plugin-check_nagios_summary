@@ -10,7 +10,8 @@ Group:		Networking
 Source0:	http://www.vanheusden.com/check_nagios_summary/%{plugin}-%{version}.tgz
 # Source0-md5:	5eba9719bffdc4cafa75efbe5bbd06c3
 Source1:	%{plugin}.cfg
-URL:		http://patrick.proy.free.fr/nagios/snmp_load.html
+Patch0:		%{name}.patch
+URL:		http://www.vanheusden.com/check_nagios_summary/
 BuildRequires:	libstdc++-devel
 Requires:	nagios-core
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -25,6 +26,7 @@ summarize the status of other (satelite) Nagios systems.
 
 %prep
 %setup -q -n %{plugin}-%{version}
+%patch0 -p1
 
 %build
 %{__make} \
