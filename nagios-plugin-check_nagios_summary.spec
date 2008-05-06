@@ -8,7 +8,7 @@ Release:	0.1
 License:	GPL
 Group:		Networking
 Source0:	http://www.vanheusden.com/check_nagios_summary/%{plugin}-%{version}.tgz
-# Source0-md5:	c28aeb0029afc7e839ade6e85f47a25b
+# Source0-md5:	5eba9719bffdc4cafa75efbe5bbd06c3
 Source1:	%{plugin}.cfg
 URL:		http://patrick.proy.free.fr/nagios/snmp_load.html
 BuildRequires:	libstdc++-devel
