@@ -1,0 +1,11 @@
+--- check_nagios_summary-0.0.26/main.cpp~	2007-12-14 11:17:00.000000000 +0200
++++ check_nagios_summary-0.0.26/main.cpp	2008-05-07 01:35:57.445959941 +0300
+@@ -38,7 +38,7 @@
+ int main(int argc, char *argv[])
+ {
+ 	int c;
+-	char *statuslog = "/usr/local/nagios/var/status.log";
++	char *statuslog = "/var/lib/nagios/status.dat";
+ 	char is_20_format = 1;
+ 	char is_file = 1;
+ 	char hard_only = 1;
