@@ -3,12 +3,12 @@
 %define		plugin	check_nagios_summary
 Summary:	Distributed Nagios monitoring enabler
 Name:		nagios-plugin-%{plugin}
-Version:	0.0.26
+Version:	0.0.27
 Release:	0.1
 License:	GPL
 Group:		Networking
 Source0:	http://www.vanheusden.com/check_nagios_summary/%{plugin}-%{version}.tgz
-# Source0-md5:	5eba9719bffdc4cafa75efbe5bbd06c3
+# Source0-md5:	0557ae26b11b884b762b54f340559838
 Source1:	%{plugin}.cfg
 Patch0:		%{name}.patch
 URL:		http://www.vanheusden.com/check_nagios_summary/
